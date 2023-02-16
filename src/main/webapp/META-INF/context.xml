@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource
+	name="jdbc/testingsysdb"
+	type="javax.sql.DataSource"
+	maxTotal="100"
+	maxIdle="30"
+	maxWaitMillis="10000"
+	url="jdbc:mysql://localhost:3306/db_testing?encoding=UTF-8&amp;useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false"
+	driverClassName="com.mysql.jdbc.Driver"
+	validationQuery="SELECT 1"
+	username="root"
+	password="kereb55525" />
+	
+	<ResourceLink
+	name="jdbc/testingsysdb"
+	global="jdbc/testingsysdb"
+	type="javax.sql.DataSource" />
+</Context>
